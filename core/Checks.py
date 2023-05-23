@@ -18,8 +18,8 @@ def CheckDatabase():
 
     print("Checking Database Requirements..")
 
-    db = con.connect(host="localhost", user=YOUR_USERNAME,
-                     database="", password=YOUR_PASSWORD)
+    db = con.connect(host="asiyademoserver123.mysql.database.azure.com", user=myadmin,
+                     database="", password=AsiyaSayed@123)
     cur = db.cursor()
     result = None
 
@@ -52,8 +52,8 @@ def CreateTables():
     Parameters -> None
     """
 
-    db = con.connect(host="localhost", user=YOUR_USERNAME,
-                     database="railway", password=YOUR_PASSWORD)
+    db = con.connect(host="asiyademoserver123.mysql.database.azure.com", user=myadmin,
+                     database="railway", password=AsiyaSayed@123)
     cur = db.cursor()
 
     cur.execute(
@@ -76,10 +76,10 @@ def CheckConnection():
 
     try:
         print("Checking the Connection to the MySQL Server..")
-        connection = con.connect(host='localhost',
+        connection = con.connect(host='asiyademoserver123.mysql.database.azure.com',
                                  database='',
-                                 user=YOUR_USERNAME,
-                                 password=YOUR_PASSWORD)
+                                 user=myadmin,
+                                 password=AsiyaSayed@123)
         if connection.is_connected():
             db_Info = connection.get_server_info()
             print("Connected to MySQL Server Version", db_Info)
