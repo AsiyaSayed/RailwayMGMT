@@ -16,7 +16,7 @@ def InsertDataTrain():
     """
 
     mn = con.connect(host="asiyademoserver123.mysql.database.azure.com",
-                     user=myadmin,
+                     user=myadmin@asiyademoserver123,
                      password=AsiyaSayed@123,
                      database="railway")
 
